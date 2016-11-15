@@ -3,6 +3,7 @@ layout: projects
 title: Project 1
 permalink: /projects/project-1
 published: true
+comments: true
 ---
 
 
