@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -9,43 +9,61 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" href="{{site.baseurl}}/bulma.css" />
+    <!--<link rel="stylesheet" href="{{ site.baseurl }}/style.css" />-->
+    <link rel="stylesheet" href="{{ site.baseurl }}/custom.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+</head>
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+<body>
+    <header class="site-header parallax">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-left">
+                    <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+                    <div class="site-info">
+                        <h1 class="site-name has-shadow"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                        <p class="site-description has-shadow">{{ site.description }}</p>
+                    </div>
+                </div>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+                <span class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+                <div class="nav-right nav-menu">
+                    <a class="nav-item has-shadow" href="/">Home</a>
+                    <a class="nav-item has-shadow" href="/projects">Projects</a>
+                    <a class="nav-item has-shadow" href="/apis">APIs</a>
+                    <a class="nav-item has-shadow" href="/blog">Blog</a>
+                    <a class="nav-item has-shadow" href="/events">Events</a>
+                </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="divider">
+        <div class="container">
+            Place for important items...
+        </div>
     </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
+    <div id="main" role="main">
+        {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+    <footer>
+        <div class="container">
+            <div class="column is-half is-offset-one-quarter">
+                <h2>Tampere &lt;3 Developers</h2>
+                <p class="is-centered">Tampere <span class="has-text-accent">&lt;3</span> Developers is a project site for City of Tampere open data project. This project is a part of the national 6Aika -project.</p>
+            </div>
+        </div>
+    </footer>
 
     {% include analytics.html %}
-  </body>
+</body>
 </html>

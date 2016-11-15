@@ -1,0 +1,18 @@
+---
+layout: blog
+title: Blog
+---
+
+{% for post in site.posts %}
+<article class="post">
+
+    <h2 class="title is-2 has-text-left"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <h3 class="subtitle is-4">Written on {{ post.date | date: "%B %e, %Y" }}</h3>
+
+    <div class="entry">
+        {{ post.excerpt }}
+    </div>
+
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">&raquo; Read More</a>
+</article>
+{% endfor %}

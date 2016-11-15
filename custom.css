@@ -1,0 +1,101 @@
+html {
+    background-color: #fff;
+}
+
+header.site-header {
+    height: 600px;
+    padding-top: 20px;
+}
+
+.parallax {
+    background-image: url("images/townhall.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1.site-name a {
+    font-size: 2.1875rem;
+    color: #ffffff;
+}
+
+p.site-description {
+    color: #ffffff;
+}
+
+.nav {
+    background: none;
+}
+
+a.nav-item {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+div.divider {
+    height: 60px;
+    padding: 40px 0;
+    background: #001B55;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+article {
+    margin: 50px 0;
+    padding: 50px 0;
+}
+
+article h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2c3e50;
+    font-size: 2.1875rem;
+    text-align: center;
+    padding: 40px 0;
+}
+
+article p {
+    line-height: 1.5;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+article p.is-centered {
+    text-align: center;
+}
+
+article.has-accent {
+    background-color: #F4F8F9;
+}
+
+.has-shadow {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.has-text-accent {
+    color: #00D1B2;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 100px;
+    color: #848484;
+    background-color: #202020;
+}
+
+footer h2 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2.1875rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer p {
+    line-height:1.5;
+    font-size:16px;
+    padding-bottom: 20px;
+}

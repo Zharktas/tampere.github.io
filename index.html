@@ -2,17 +2,106 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<article class="container">
+    <div class="column is-half is-offset-one-quarter">
+        <h2>Tampere <span class="has-text-accent">&lt;3</span> Developers</h2>
+        <p class="is-centered">Open Data and code samples. Part of the national 6Aika -project. Check out our open data sets,
+            projects using open data, APIs, events and occasionally updating blog!</p>
+    </div>
+</article>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<article class="has-accent">
+    <div class="container">
+        <h2>About our project</h2>
+        <p>Welcome to Tampere Developers' Portal! The site is developed and operated by the City's Open Data team.</p>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+        <p>You can find information about our projects, open data sets and APIs. All data is open and freely distributed as CC4.0.
+            All code samples and APIs are available in GitHub and licensed as CC4.0.</p>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+        <p>Any questions or comments? Scroll down a little to find the culprits and their contact information.</p>
+
+    </div>
+</article>
+
+<article class="container">
+    <h2>Meet our team</h2>
+    <div class="columns">
+        <div class="card column">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="http://placehold.it/300x225" alt="">
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p class="title is-5">Joonas Dukpa</p>
+                        <p class="subtitle is-6">@dukpa</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    Projektipäällikkö <br><a href="#">email@tampere.fi</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card column">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="http://placehold.it/300x225" alt="">
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p class="title is-5">Anu-Maria Laitinen</p>
+                        <p class="subtitle is-6">@dukpa</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    Yhteisövastaava <br><a href="#">email@tampere.fi</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card column">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="http://placehold.it/300x225" alt="">
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p class="title is-5">Petteri Sintonen</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    Data-asiantuntija <br><a href="#">email@tampere.fi</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card column">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="http://placehold.it/300x225" alt="">
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p class="title is-5">Antti Sand</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    Code Fellow <br><a href="#">email@tampere.fi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
